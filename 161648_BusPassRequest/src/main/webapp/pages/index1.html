@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bus Portal</title>
+<link href="styles/mystyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script/validator.js"></script>
+<style>
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.loginform{
+	width:400px;
+	padding:8% 0 0;
+	margin:auto;
+	border-radius: 25px;
+	
+}
+.form{
+	position:relative;
+	
+	max-width:360px;
+	margin:0 auto 100px;
+	padding :45px;
+	text-align:center;
+	border-radius: 25px;
+	box-shadow:5px 5px 5px 5px;
+}
+.form input{
+	font-family:"Roboto",sans-serif;
+	outline:0;
+	background:#f2f2f2;
+	width:100%;
+	border:0;
+	margin:0 0 15px;
+	padding:15px;
+	border-radius: 25px;
+	box-sizing:border-box;
+	font-size:14px;
+	
+}
+.btn{
+	font-size:14px;
+	font-weight:bolder;
+	padding: 5px 5px 5px 5px;
+	background-color: #008000;
+	color:black;
+	border:1px solid green;	
+}
+#centerCnt{
+	width: 1400px;
+	display: inline-block;
+	
+}
+
+.myimg{
+	width: 300px;
+	margin: 10px 10px 10px 10px;
+	float: left;
+}
+
+
+</style>
+</head>
+<body>
+<div class="bg">
+<form name="f1" action="../LoginServlet" method="post" onsubmit="return validate()">
+<h1 align="center" style="color:gray;">Bus Portal</h1>
+
+<div id="centerCnt" >
+<div class="loginform" >
+	<div class = "form" style="background-color: aqua;;">
+		<form name="f1" action="../LoginServlet" method="post">
+			
+			<input type="text"  placeholder="Username" name="username" >
+			<input type="password" placeholder="Password" name="password" >
+			<input type="submit" value="Login" name="login" class="btn" style='color:black'>
+		
+		</form>
+	
+	</div>
+	</div>
+
+
+
+</div>
+
+</form>
+</body>
+</html>
