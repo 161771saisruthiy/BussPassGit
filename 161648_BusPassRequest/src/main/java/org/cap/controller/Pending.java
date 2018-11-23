@@ -35,7 +35,7 @@ public class Pending extends HttpServlet {
 
 		PrintWriter pw=response.getWriter();
 		pw.print("hai sruthi");
-	
+	pw.println("hai every one");
 		pw.println("<html><body><h3 align='center'style=\"color:blue\">All Pending Requests</h3>");
 		pw.println("<table>"
 				+ "<tr>"
